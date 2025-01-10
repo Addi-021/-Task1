@@ -13,12 +13,11 @@ class Student:
      self.avgrage = avgrage
     
    def __str__(self):
-      return f"name: {self.name} , RollNo:{self.RollNo} ,M1:{self.M1},M2:{self.M2},M3:{self.M3}, avgrage:{self.avgrage}"# This line is used to produce meaningfull   string representation 
+      return f"name: {self.name} , RollNo:{self.RollNo} ,M1:{self.M1},M2:{self.M2},M3:{self.M3}, avgrage:{self.avgrage}"
     
 class StudentManager:
   def __init__(self):
-     self.student = []    # =[] is an empty list. This list can hold multiple student object allowing the program to manage a collection of students.
-                          # i.e. It can hold multiple values 
+     self.student = []    
 def accept(self, name, rollno, marks1, marks2):
         """Accept and add a new student."""
         student = Student(name, rollno, marks1, marks2)
